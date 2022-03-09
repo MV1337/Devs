@@ -1,0 +1,60 @@
+<a href="/devs/profile">Voltar</a>
+<div class="devs-form-container">
+    <h1>Atualize suas informações</h1>
+    <form action="/devs/edit" method="POST">
+        <div class="form-control">
+            
+
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label for="">Selecionado anteriormente: {{devs.devweb}}</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="level"><strong>Senioridade:</strong></label>
+            <select id="senioridade" name="level">
+                <option selected disabled value=""> {{devs.level}} </option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <div id="check">
+                <label><strong>Desmarque as que você não utiliza:</strong></label><br>
+                <label>Selecionadas anteriormente: {{devs.technologies}}</label><br><br>
+                <input type="checkbox" id="tecnologia1" name="technologies" value="HTML" checked>
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="technologies" value="CSS" checked>
+                <label for="tecnologia2"> CSS</label>
+                <input type="checkbox" id="tecnologia3" name="technologies" value="JavaScript" checked>
+                <label for="tecnologia3"> JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="technologies" value="PHP" checked>
+                <label for="tecnologia4"> PHP</label>
+                <input type="checkbox" id="tecnologia5" name="technologies" value="C#" checked>
+                <label for="tecnologia5"> C#</label>
+                <input type="checkbox" id="tecnologia6" name="technologies" value="Python" checked>
+                <label for="tecnologia6"> Python</label>
+                <input type="checkbox" id="tecnologia7" name="technologies" value="React" checked>
+                <label for="tecnologia7"> React</label>
+            </div>
+        </div>
+
+        <div class="form-control">
+            <label for="experience"><strong>Atualize sua experiência: </strong></label>
+            <textarea rows="10" style="width: 31em" id="experiencia" name="experience"> {{devs.experience}} </textarea>
+        </div>
+
+
+
+        <input type="submit" value="Atualizar dados">
+    </form>
+</div>

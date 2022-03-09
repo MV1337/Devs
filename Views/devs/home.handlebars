@@ -1,0 +1,10 @@
+<h1 style="text-align: center;">Participantes deste projeto</h1>
+<div class="home-container">
+    {{#each devs}}
+    <div class="itens">
+        <p> {{this.User.name}} {{this.User.surname}}</p>
+        <p> Dev {{this.devweb}}</p>
+        <a href="/devs/dev/{{this.id}}/{{this.User.id}}" class="btn">Saiba mais</a>
+    </div>
+    {{/each}}
+</div>

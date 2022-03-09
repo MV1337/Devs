@@ -1,0 +1,55 @@
+<a href="/devs/profile">Voltar</a>
+<div class="devs-form-container">
+    <h1>Adicione suas informações</h1>
+    <form action="/devs/add" method="POST">
+        <div class="form-control">
+            <label><strong>De qual lado da aplicação você desenvolve?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="Frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="Fullstack">Fullstack
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="level"><strong>Senioridade:</strong></label>
+            <select id="senioridade" required name="level">
+                <option selected disabled value="">Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+             <div id="check">
+                <label><strong>Selecione as tecnologias que você utiliza:</strong></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="technologies" value="HTML">
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="technologies" value="CSS">
+                <label for="tecnologia2"> CSS</label>
+                <input type="checkbox" id="tecnologia3" name="technologies" value="JavaScript">
+                <label for="tecnologia3"> JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="technologies" value="PHP">
+                <label for="tecnologia4"> PHP</label>
+                <input type="checkbox" id="tecnologia5" name="technologies" value="C#">
+                <label for="tecnologia5"> C#</label>
+                <input type="checkbox" id="tecnologia6" name="technologies" value="Python">
+                <label for="tecnologia6"> Python</label>
+                <input type="checkbox" id="tecnologia7" name="technologies" value="React">
+                <label for="tecnologia7"> React</label>
+            </div>
+        </div>
+
+        <div class="form-control">
+            <label for="experience"><strong>Conte um pouco sobre sua experiência: </strong></label>
+            <textarea rows="8" style="width: 29em" id="experiencia" name="experience"></textarea>
+        </div>
+
+
+        <input type="submit" value="Enviar dados">
+    </form>
+</div>

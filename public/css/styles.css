@@ -1,0 +1,363 @@
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    /* color: black; */
+    color: rgb(107, 158, 175);
+    background-color: black;
+    box-sizing: border-box;
+
+}
+
+/* NAVBAR */
+#logo img {
+    height: 70px;
+    margin-left: 8px;
+}
+
+
+#navbar {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid rgb(107, 158, 175);
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin-left: 1.9em;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    color: rgb(64, 114, 131);
+}
+
+h2 {
+    text-align: center;
+}
+
+
+/* Container */
+
+.container {
+    min-height: 60vh;
+    padding: 2em;
+}
+
+/* HOME */
+
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    gap: 60px;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 460px;
+    overflow: scroll;
+}
+
+.home-container .itens {
+    display: flex;
+    border: 3px solid rgb(64, 114, 131);
+    border-radius: 15px;
+    padding: 25px;
+    flex: 1 1 60%;
+    max-width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.home-container p {
+    text-transform: uppercase;
+}
+
+/* Messages */
+.message {
+    padding: 1em;
+    color: #fff;
+    background-color: rgb(64, 114, 131);
+    border: 1px solid rgb(39, 83, 97);
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 2em;
+    max-width: 50%;
+}
+
+
+/* LOGIN E REGISTER */
+.auth-container {
+    max-width: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container h2 {
+    margin-bottom: 1em;
+    border-left: 4px solid lightblue;
+    padding: .3em;
+    width: 100px;
+}
+
+.auth-container a {
+    color: rgb(93, 160, 180);
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.form-control input,
+.form-control textarea {
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(74, 128, 146);
+}
+
+form input[type='url'] {
+    max-width: 35%;
+}
+
+form input[type='submit'],
+.btn {
+    background-color: transparent;
+    color: rgb(107, 158, 175);
+    border: 2px solid rgb(107, 158, 175);
+    padding: .5em 1.2em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+form input[type='submit']:hover,
+.btn:hover {
+    background-color: rgb(107, 158, 175);
+    color: #fff;
+}
+
+/* PROFILE */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.title-container h2 {
+    border-left: 4px solid rgb(107, 158, 175);
+    padding: 10px;
+}
+
+.profile p {
+    border-bottom: 3px solid rgb(107, 158, 175);
+    margin-bottom: 1em;
+    text-align: center;
+    margin: 2em auto;
+    padding: 10px;
+    max-width: 70%;
+}
+
+/* create */
+.devs-form-container {
+    margin-left: 36%;
+}
+
+.devs-form-container a {
+    color: rgb(107, 158, 175);
+}
+
+.devs-form-container h1 {
+    border-left: 4px solid rgb(107, 158, 175);
+    padding: 10px;
+    margin-top: 1em;
+}
+
+.devs-form-container form {
+    margin-top: 1.5em;
+    margin: 1.5em auto 0;
+}
+
+#senioridade {
+    max-width: 120px;
+    padding: 10px;
+}
+
+
+/* DEV page */
+
+.dev-container {
+    border: 3px solid rgb(107, 158, 175);
+    padding: 20px;
+    margin: 10px 300px;
+    box-shadow: 5px 10px 10px rgb(107, 158, 175);
+    border-radius: 1%;
+}
+
+.dev-h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.dev {
+    margin-top: 30px;
+}
+
+.dev p {
+    border-bottom: 3px solid rgb(107, 158, 175);
+    margin-bottom: 1em;
+    text-align: center;
+    width: 85%;
+    margin: 1.5em auto;
+    padding: 10px;
+}
+
+.dev span {
+    text-transform: uppercase;
+}
+
+.dev h2 {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    font-weight: bold;
+    color: rgb(107, 158, 175);
+}
+
+/* Scroll */
+
+::-webkit-scrollbar-track {
+    background-color: #232C3B;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(107, 158, 175);
+    border-radius: 15px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 640px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    .home-container {
+        display: flex;
+        margin: 30px 0;
+        flex: 1 1 60%;
+        gap: 30px;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    .home-container .itens {
+        display: flex;
+        border: 2px solid rgb(64, 114, 131);
+        border-radius: 30px;
+        padding: 20px;
+        flex: 1 1 100%;
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+
+    form input[type='submit'],
+    .btn {
+        padding: .1em .2em;
+        border: none;
+        border-bottom: 2px solid blue;
+    }
+
+    .dev-container {
+        border: 3px solid rgb(107, 158, 175);
+        border: none;
+        padding: 10px;
+        margin: 10px 0px;
+        box-shadow: 5px 10px 10px rgb(107, 158, 175);
+        border-radius: 1%;
+        /* height: 400px; */
+        /* overflow: scroll; */
+    }
+    
+    .dev-h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .dev {
+        margin-top: 30px;
+    }
+    
+    .dev p {
+        border-bottom: 3px solid rgb(107, 158, 175);
+        margin-bottom: 1em;
+        text-align: left;
+        width: 100%;
+        margin: 1.5em auto;
+        padding: 10px;
+    }
+
+    .devs-form-container {
+        margin: 0 auto;
+    }
+
+    .form-control textarea {
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid rgb(74, 128, 146);
+        max-width: 95%;
+    }
+
+    .profile p{
+        margin: 2em auto;
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .message {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,20 @@
+
+<div class="dev-container">
+    <input type="hidden" name="userid" value="{{dev.id}}" id="teste">
+    <h1 class="dev-h1"><span>{{user.name}} {{user.surname}}</span> - {{dev.level}}</h1>
+    <div class="dev">
+        <p> <span class="upper">Dev: </span> {{dev.devweb}}</p>
+    </div>
+    <div class="dev">
+        <p> <span class="upper">Conhecimento nas tecnólogias:</span> {{dev.technologies}}</p>
+    </div>
+
+    <div class="dev">
+        <p> <span class="upper">Um pouco sobre a experiência de {{user.name}}:</span> <br><br> {{dev.experience}}</p>
+    </div>
+
+    <div class="dev">
+        <h2>Tem interesse nesse dev?</h2>
+        <p>Mande uma mensagem neste e-mail: {{user.email}}</p>
+    </div>
+</div>

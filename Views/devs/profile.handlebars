@@ -1,0 +1,21 @@
+<div class="profile">
+    <div class="title-container">
+        <h2>Perfil</h2>
+    </div>
+
+    {{#if checkDevs}}
+    {{#each devs}}
+    <div class="dev-container">
+    <h2>SUAS INFORMAÇÕES:</h2>
+    <p>Dev: {{this.devweb}}</p>
+    <p> Senioridade: {{this.level}} </p>
+    <p> Conhecimento nas tecnologias: <br> {{this.technologies}} </p>
+    <p> Sua experiencia: <br><br> {{this.experience}}</p>
+    <h4 style="text-align: center;"> <a href="/devs/edit/{{this.id}}" class="btn">Atualizar informações</a></h4>
+    {{/each}}
+    </div>
+
+    {{else}}
+    <h3 style="text-align: center;"> Adicione suas informações<br> <br><a href="/devs/add" class="btn">Adicionar informações</a></h3>
+    {{/if}}
+</div>
