@@ -2,7 +2,7 @@
 
 
 ## Projeto Devs 
-Um projeto criado para aplicar conhecimentos do back-and, com node js
+Um projeto criado para aplicar conhecimentos do back-and, com Node.JS.
 O projeto foi feito para que devs possam colocar suas informações e habilidades
 
 
